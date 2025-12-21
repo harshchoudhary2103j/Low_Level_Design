@@ -13,9 +13,11 @@ In a coffee vending machine system:
 There is a base coffee.Customers can add optional items like Milk, Sugar, and Cream.Add-ons can be combined in any order.Each add-on increases the total price and description.
 
 We must avoid creating multiple subclasses such as:
-CoffeeWithMilk 
-CoffeeWithMilkAndSugar 
-CoffeeWithMilkSugarCream
+1.CoffeeWithMilk 
+
+2.CoffeeWithMilkAndSugar 
+
+3.CoffeeWithMilkSugarCream
 
 This would lead to **class explosion and poor maintainability**.
 
@@ -26,7 +28,9 @@ This would lead to **class explosion and poor maintainability**.
 **Why this pattern fits here:**
 
 1.Add-ons are optional and dynamicBehavior is layered at runtime.
+
 2.Avoids subclass explosion
+
 3.Follows the Open–Closed Principle
 
 High-Level Design
@@ -50,8 +54,11 @@ CoffeeMachine: Main class that simulates the backend flow and runs the applicati
 Runtime Data Flow
 
 Client creates a BasicCoffee object.
+
 BasicCoffee is wrapped by MilkDecorator.
+
 MilkDecorator is wrapped by SugarDecorator.
+
 SugarDecorator is wrapped by CreamDecorator.
 
 The final object contains layered behavior from all decorators.
