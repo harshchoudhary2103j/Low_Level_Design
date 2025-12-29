@@ -36,34 +36,33 @@ With Facade → Controller talks to **one class**
 
 ---
 
-## 📦 Project Structure
 
-├── controller/
-│ └── OrderController.java
-├── facade/
-│ └── OrderProcessingFacade.java
-├── service/
-│ ├── InventoryService.java
-│ ├── PaymentService.java
-│ ├── OrderService.java
-│ └── NotificationService.java
-└── Main.java
 
 
 ---
 
 ## 🔁 Data Flow
 
-Main
-↓
-OrderController
-↓
-OrderProcessingFacade
-↓
-| InventoryService |
-| PaymentService |
-| OrderService |
-| NotificationService |
+Main  
+
+↓  
+
+OrderController  
+
+↓  
+
+OrderProcessingFacade  
+
+↓  
+
+| InventoryService |  
+
+| PaymentService |  
+
+| OrderService |  
+
+| NotificationService |  
+
 
 
 ---
