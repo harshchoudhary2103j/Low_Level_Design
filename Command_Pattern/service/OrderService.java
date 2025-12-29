@@ -29,5 +29,10 @@ public class OrderService {
 
         invoker.executeAll();
     }
+
+    public void createOrder(String userId, String productId) {
+        // Simulating order creation
+        System.out.println("Order created for user " + userId + " with product " + productId);
+    }
 }
 

@@ -1,8 +1,10 @@
 package Command_Pattern.receiver;
 
 public class PaymentService {
-    public void processPayment(String orderId,double amount){
-        System.out.println("Payment processed for the order: "+orderId);
-    }
     
+    public boolean processPayment(String userId, double amount) {
+        // Simulating payment processing
+        System.out.println("Processing payment of " + amount + " for user " + userId);
+        return true;
+    }
 }
