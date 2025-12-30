@@ -85,5 +85,5 @@ Document Content
 - Client code does not change if security rules change
 - Easy to extend with caching, metrics, or rate limiting
 
-
+--
 
